@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            animation: rotateImage 4s linear infinite;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            animation: fadeIn 2s linear infinite;
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .navbar{
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+padding: 12px;
+color:white;
+text-decoration: none;
+ font-size: 15px;
+}
+
+.navbar a:hover{
+    background-color:red;
+}
+.active{
+    background-color: lightskyblue;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-f fa-home"></i>Home</a>
+        <a class="#" href="#"><i class="fa fa-f fa-search"></i>Search</a>
+        <a class="#" href="#"><i class="fa fa-f fa-envelope"></i>Contact</a>
+        <a class="active" href="#"><i class="fa fa-f fa-user"></i>Login</a>
+    </div>
+
+    
+    <div id="container">
+        <img src="download (2).jpeg" alt="Example Image">
+        <p>Computer animation can be very detailed 3D animation, while 2D computer animation (which may have the look of traditional animation) can be used for stylistic reasons, low bandwidth, or faster real-time renderings. Other common animation methods apply a stop motion technique to two- and three-dimensional objects like paper cutouts, puppets, or clay figures</p>
+    </div>
+</body>
+</html>
